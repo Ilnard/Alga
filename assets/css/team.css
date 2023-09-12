@@ -1,0 +1,119 @@
+.team {
+    margin-bottom: 250px;
+}
+.team__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 55px;
+}
+.team-member {
+    display: flex;
+    height: 430px;
+    background-color: white;
+}
+.team-member_reverse {
+    flex-direction: row-reverse;
+}
+.team-member__media {
+    width: 60%;
+    min-width: 250px;
+    height: 100%;
+    position: relative;
+}
+.team-member__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.team-member__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.team-member__fullname {
+    font-size: 24px;
+    font-weight: 500;
+}
+.team-member__post {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+}
+.team-member__speciality {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: -15px;
+}
+@media screen and (max-width: 1250px) {
+    .team__inner {
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 1130px) {
+    .team-member {
+        height: 330px;
+    }
+    .team-member__media {
+        min-width: 180px;
+    }
+    .team-member__info {
+        gap: 20px;
+        padding: 20px;
+    }
+    .team-member__fullname {
+        font-size: 20px; 
+    }
+    .team-member__post {
+        font-size: 16px; 
+    }
+    .team-member__speciality {
+        font-size: 16px;
+        margin-top: -5px;
+    }
+}
+@media screen and (max-width: 786px) {
+    .team__inner {
+        gap: 30px;
+    }
+    .team-member {
+        height: 250px;
+    }
+    .team-member__media {
+        min-width: 150px;
+    }
+    .team-member__fullname {
+        font-size: 18px; 
+    }
+    .team-member__post {
+        font-size: 14px; 
+    }
+    .team-member__speciality {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .team__inner {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 430px) {
+    .team-member__info {
+        gap: 10px;
+        padding: 10px;
+    }
+    .team-member__fullname {
+        font-size: 16px; 
+    }
+    .team-member__post {
+        font-size: 12px; 
+    }
+    .team-member__speciality {
+        font-size: 12px;
+        margin-top: -5px;
+    }
+}
